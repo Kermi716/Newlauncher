@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Newlauncher - Официальный сайт</title>
-    <meta name="description" content="Официальный сайт Newlauncher для Майнкрафт. Скачать Newlauncher бесплатно: Wexside, Nursultan, Delta, Catlavan.">
-    <meta name="keywords" content="newlauncher, скачать newlauncher, newlauncher minecraft, new launcher, читы майнкрафт, лаунчер с читами">
+    <meta name="description"
+        content="Официальный сайт Newlauncher для Майнкрафт. Скачать Newlauncher бесплатно: Wexside, Nursultan, Delta, Catlavan.">
+    <meta name="keywords"
+        content="newlauncher, скачать newlauncher, newlauncher minecraft, new launcher, читы майнкрафт, лаунчер с читами">
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
@@ -17,7 +19,8 @@
 
     <link rel="icon" type="image/x-icon" href="assetsnew/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="assetsnew/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -668,8 +671,181 @@
                 justify-content: flex-start;
             }
         }
+
+        @media (max-width: 768px) {
+            .header-bar {
+                padding: 0 12px;
+                height: 52px;
+            }
+
+            .logo-main {
+                height: 48px;
+            }
+
+            .logo-watermark {
+                height: 120px;
+                opacity: 0.08;
+            }
+
+            .nav-btn {
+                padding: 10px 8px 0 8px;
+            }
+
+            .nav-icon-img {
+                width: 22px;
+                height: 22px;
+            }
+
+            .main-content {
+                padding: 12px;
+            }
+
+            .home-layout {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .posters-slider {
+                max-height: 380px;
+            }
+
+            .banner-pill {
+                height: 40px;
+            }
+
+            .banner-pill span {
+                font-size: 11px;
+            }
+
+            .screenshots-tilted-wrap {
+                flex-direction: column;
+                gap: 14px;
+                padding: 4px 0;
+            }
+
+            .screenshot-card {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .screenshot-card.tilt-left,
+            .screenshot-card.tilt-right {
+                transform: none;
+            }
+
+            .big-install-btn {
+                padding: 14px 18px;
+                font-size: 14px;
+                border-radius: 12px;
+            }
+
+            .section-box {
+                padding: 16px;
+                border-radius: 14px;
+            }
+
+            .site-footer {
+                padding: 14px 14px 12px 14px;
+            }
+
+            .footer-inner {
+                gap: 12px;
+            }
+
+            .footer-left {
+                flex-direction: row;
+                align-items: center;
+                gap: 12px;
+                flex: auto;
+            }
+
+            .footer-logo {
+                height: 38px;
+            }
+
+            .footer-copyright {
+                font-size: 12.5px;
+            }
+
+            .footer-legal-name {
+                font-size: 11.5px;
+            }
+
+            .footer-requisites {
+                font-size: 10.5px;
+                gap: 6px;
+            }
+
+            .footer-email-row {
+                font-size: 11px;
+                margin-top: 1px;
+            }
+
+            .tg-icon-btn {
+                padding: 8px 14px;
+                font-size: 13px;
+                border-radius: 8px;
+            }
+
+            .tg-icon-btn i {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-bar {
+                padding: 0 8px;
+            }
+
+            .logo-main {
+                height: 40px;
+            }
+
+            .logo-watermark {
+                display: none;
+            }
+
+            .site-footer {
+                padding: 12px 10px 10px 10px;
+            }
+
+            .footer-left {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .footer-logo {
+                height: 32px;
+            }
+
+            .tg-icon-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 8px 12px;
+                font-size: 12.5px;
+            }
+
+            .modal-card {
+                padding: 24px 16px 20px 16px;
+                width: 94%;
+            }
+
+            .modal-title {
+                font-size: 16px;
+            }
+
+            .modal-desc {
+                font-size: 12.5px;
+            }
+
+            .modal-btn {
+                font-size: 13px;
+                padding: 10px 14px;
+            }
+        }
     </style>
-        <script type="application/ld+json">
+    <script type="application/ld+json">
     {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -851,14 +1027,16 @@
         <div class="modal-card">
             <button class="modal-close" onclick="closeAuthModal()">&times;</button>
             <div class="modal-icon">
-                <i class="fa-solid fa-lock"></i>
+                <i class="fa-solid fa-robot"></i>
             </div>
-            <h3 class="modal-title">Требуется авторизация</h3>
+            <h3 class="modal-title">Проверка на бота</h3>
             <p class="modal-desc">
-                Для скачивания установщика лаунчера необходимо пройти быструю авторизацию через Telegram.
+                Для скачивания установщика Newlauncher необходимо подтвердить, что вы человек. Пожалуйста, пройдите
+                быструю бесплатную регистрацию через Telegram.
             </p>
             <div class="modal-actions">
-                <a href="/telegram" class="action-btn modal-btn" style="text-decoration: none;">Зарегистрироваться</a>
+                <a href="/telegram" class="action-btn modal-btn" style="text-decoration: none;">Пройти проверку и
+                    зарегистрироваться</a>
             </div>
         </div>
     </div>
